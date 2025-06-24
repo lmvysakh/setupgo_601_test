@@ -23,9 +23,12 @@ jobs:
 
     - name: Install dependencies
       run: go mod download
+      working-directory: src/files
 
     - name: Build
       run: go build -v ./...
+      working-directory: src/files
 
     - name: Test
       run: go test -v ./...
+      working-directory: src/files
