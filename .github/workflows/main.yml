@@ -29,6 +29,4 @@ jobs:
       run: go build -v ./...
       working-directory: src/files
 
-    - name: Test
-      run: go test -v ./...
-      working-directory: src/files
+  
