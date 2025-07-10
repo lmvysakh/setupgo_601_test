@@ -37,3 +37,8 @@ jobs:
       if: always()
       run: |
         chmod -R u+w $HOME/go/pkg/mod || true
+
+    - name: Clean Go module cache
+      if: always()
+      run: |
+        go clean -modcache || true
